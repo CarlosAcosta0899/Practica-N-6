@@ -1,0 +1,54 @@
+#pagina{
+    display: grid;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    grid-template-areas: "head head head"
+                         "div div div"
+                         "nav nav nav"
+                         "main main2 main3"
+                         ". foot foot"
+                         "foot2 foot2 foot2";
+    grid-template-rows: 50px 150px 50px 250px 50px 350px;
+    grid-template-columns: 250px 0.8fr 1.5fr;
+}
+#pagina > header{
+    grid-area: head;
+    height: 50px;
+    background-color: green;
+}
+#pagina > div {
+    grid-area: div;
+    height: 150px;
+    background-color: yellow;
+}
+#pagina > nav{
+    grid-area: nav;
+    height: 50px;
+    background-color: cadetblue;
+}
+#pagina > main{
+    grid-area: main;
+    height: 350px;
+    background-color: palevioletred;
+}
+#pagina > .main2{
+    grid-area: main2;
+    height: 350px;
+    background-color: blue;
+}
+#pagina > .main3{
+    grid-area: main3;
+    height: 350px;
+    background-color: skyblue;
+}
+#pagina > footer{
+    grid-area: foot;
+    height: 50px;
+    background-color: orange;
+}
+#pagina > .footer2{
+    grid-area: foot2;
+    height: 50px;
+    background-color: red;
+}
